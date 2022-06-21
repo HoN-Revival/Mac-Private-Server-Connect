@@ -22,12 +22,15 @@ set webServer to "TODO"
 set messageServer to "TODO"
 ```
 
+Then you can either run the script, or save it as your own local application (so you can double-click it to launch) by
+going to `Save` and choosing `Application` from the drop-down menu.
+
 ## How does it work?
 
 The script is very simple. Feel free to take a look. It just opens a shell command to run the following:
 
 ```
-open -b com.frostburnstudios.HoN64 --args -masterserver masterServer -webserver <webServer> -messageserver <messageServer>
+open -b com.frostburnstudios.HoN64 --args -masterserver <masterServer> -webserver <webServer> -messageserver <messageServer>
 ```
 
 ## FAQ
