@@ -3,6 +3,33 @@
 This repo contains a simple helper script to connect to HoN private servers. Basically it's just an AppleScript to pass the appropriate command
 line arguments on mac.
 
+## How to use the script?
+
+### Project Kongor
+
+To connect to Project Kongor, simply download the latest [release](https://github.com/HoN-Revival/Mac-Private-Server-Connect/releases/)
+and run it. You can use this to launch HoN.
+
+### Custom Servers
+
+If you want to specify which servers to connect to, simply download the source and open `HoN Private Server Connect.scpt`.
+
+In this file, specify the servers you want to connect to in place of the TODOs:
+
+```
+set masterServer to "TODO"
+set webServer to "TODO"
+set messageServer to "TODO"
+```
+
+## How does it work?
+
+The script is very simple. Feel free to take a look. It just opens a shell command to run the following:
+
+```
+open -b com.frostburnstudios.HoN64 --args -masterserver masterServer -webserver <webServer> -messageserver <messageServer>
+```
+
 ## FAQ
 
 I'm getting one of these errors: `"Apple couldn't verify this app for malware"` or `"This application is damaged and cannot be opened"`.
